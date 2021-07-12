@@ -24,4 +24,14 @@ $(document).ready(function(){
         $('input[name=lastname]').css('border-bottom','1px solid darkgray');
         $('input[name=email]').css('border-bottom','1px solid darkgray');
     });
+
+    $('a[id=forgotpassword]').click(function(){
+          $('.form-account').css('display','none');
+           $('.form-forgot').css('display','block');
+           
+    })
+    $('a[id=cancel]').click(function(){
+          $('.form-account').css('display','block');
+          $('.form-forgot').css('display','none');
+    });
 });

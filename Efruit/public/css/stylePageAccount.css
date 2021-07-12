@@ -46,12 +46,18 @@ h1,h2,h3,h4,h5,h6{
 
 }
 /*css form-create-account*/
-.customer-create-account{
+.container-customer-account{
+ 
+    
+}
+.customer-account{
     padding: 100px 0;
 }
-.form-create-account{
+.form-account{
     background:#f3f3f3 none repeat scroll 0 0;
     max-width: 600px;
+     /* position: absolute; */
+    width: 100%;display: block;
 }
 .header-create-account{
     text-align: center;
@@ -83,6 +89,14 @@ h1,h2,h3,h4,h5,h6{
 .input-submit-account{
     padding: 0px 30px 20px 30px;
 }
+.input-submit-account a{
+    float: right;
+    color: #333333;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: 100;
+    border: none;
+}
 .input-submit-account input{
     border-bottom: none;
     width: fit-content;
@@ -109,9 +123,15 @@ h1,h2,h3,h4,h5,h6{
 :focus{
     outline: none;
 }
-/*css after click event input*/
+
 .container-input-label{
     position: relative;
+}
+/*css forgot-form*/
+
+.form-forgot{
+    background:#f3f3f3 none repeat scroll 0 0;
+    max-width: 600px;position: absolute;width: 100%;display: none;
 }
 /*css reponsive*/
 
