@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //login and register page
     $('input[name=firstname]').css('border-bottom','2px solid black');
     $('input[name=firstname]').click(function(){
         $(this).css('border-bottom','2px solid black');
@@ -33,4 +34,9 @@ $(document).ready(function(){
           $('.form-account').css('display','block');
           $('.form-forgot').css('display','none');
     });
+
+    //account page
+    
+    //address page
+    
 });
