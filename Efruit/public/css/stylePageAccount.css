@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
 /*css inside-bread-section*/
 .title h1{
     font-size: 56px;
@@ -33,8 +34,7 @@ h1,h2,h3,h4,h5,h6{
     padding-right: 50px;
 }
 .inside-bread-section{
- 
-    padding: 70px 0 70px 0;
+    /* padding: 70px 0 70px 0; */
 }
 .bread-section{
     padding: 70px;
@@ -44,6 +44,74 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     position: relative;
 
+}
+/*css form-create-account*/
+.customer-create-account{
+    padding: 100px 0;
+}
+.form-create-account{
+    background:#f3f3f3 none repeat scroll 0 0;
+    max-width: 600px;
+}
+.header-create-account{
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+.header-create-account h2{
+    font-weight: 600;
+}
+.header-create-account p{
+    color: #666666;
+    font-size: 14px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 600;
+}
+.main-create-account-fillout{
+    padding: 20px 30px 20px 30px;
+    transition: 2s linear;
+}
+.main-create-account-fillout input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-bottom: 1px solid darkgray;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+}
+.input-submit-account{
+    padding: 0px 30px 20px 30px;
+}
+.input-submit-account input{
+    border-bottom: none;
+    width: fit-content;
+    background: black;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+.end-form-createaccount{
+    padding: 0 30px 30px 30px;
+}
+.end-form-createaccount a{
+    color: #333333;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: 100;
+    border:none;
+}
+/*css placeholder input*/
+.main-create-account-fillout ::placeholder{
+    font-weight: 600;
+}
+:focus{
+    outline: none;
+}
+/*css after click event input*/
+.container-input-label{
+    position: relative;
 }
 /*css reponsive*/
 
@@ -71,6 +139,9 @@ h1,h2,h3,h4,h5,h6{
     .title h1{
         font-size: 24px;
         margin-bottom: 15px;
+    }
+    .bread-section{
+        padding: 30px;
     }
 }
 
