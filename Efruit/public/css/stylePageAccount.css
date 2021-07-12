@@ -1,7 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 /*css inside-bread-section*/
+.title ul{
+    padding-left: 0;
+}
 .title h1{
     font-size: 56px;
     font-weight: 400;
@@ -46,12 +50,8 @@ h1,h2,h3,h4,h5,h6{
 
 }
 /*css form-create-account*/
-.container-customer-account{
- 
-    
-}
 .customer-account{
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .form-account{
     background:#f3f3f3 none repeat scroll 0 0;
@@ -132,6 +132,38 @@ h1,h2,h3,h4,h5,h6{
 .form-forgot{
     background:#f3f3f3 none repeat scroll 0 0;
     max-width: 600px;position: absolute;width: 100%;display: none;
+}
+
+/*css my-account*/
+.my-account{
+    padding: 70px 0;
+}
+.container-my-account h1{
+    font-weight: 600;
+}
+.logout{
+    float: right;
+}
+.logout a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+}
+.order-history p{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+}
+.account-details p{
+    font-family: Marcellus,Arial,Helvetica,sans-serif;
+}
+.account-details p a{
+    text-decoration: none;
+    color: #333333;
+}
+.account-details p a:hover{
+    color: red;
 }
 /*css reponsive*/
 

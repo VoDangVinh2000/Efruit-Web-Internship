@@ -28,7 +28,6 @@ $(document).ready(function(){
     $('a[id=forgotpassword]').click(function(){
           $('.form-account').css('display','none');
            $('.form-forgot').css('display','block');
-           
     })
     $('a[id=cancel]').click(function(){
           $('.form-account').css('display','block');
