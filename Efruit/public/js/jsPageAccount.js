@@ -38,5 +38,72 @@ $(document).ready(function(){
     //account page
     
     //address page
+    //click css input form add a address
+    $('input[name=firstname-address]').click(function(){
+        $(this).css('border-bottom','1px solid black');
+        $('input[name=lastname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=cityAddress]').css('border-bottom','1px solid darkgray');
+        $('input[name=phoneAddress]').css('border-bottom','1px solid darkgray');
+    });
+    $('input[name=lastname-address]').click(function(){
+        $(this).css('border-bottom','1px solid black');
+        $('input[name=firstname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=cityAddress]').css('border-bottom','1px solid darkgray');
+        $('input[name=phoneAddress]').css('border-bottom','1px solid darkgray');
+    });
+    $('input[name=cityAddress]').click(function(){
+        $(this).css('border-bottom','1px solid black');
+        $('input[name=firstname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=lastname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=phoneAddress]').css('border-bottom','1px solid darkgray');
+    });
+    $('input[name=phoneAddress]').click(function(){
+        $(this).css('border-bottom','1px solid black');
+        $('input[name=firstname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=lastname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=cityAddress]').css('border-bottom','1px solid darkgray');
+        
+    });
+      $('input[name=companyAddress]').click(function(){
+        $('input[name=firstname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=lastname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=cityAddress]').css('border-bottom','1px solid darkgray');
+          $('input[name=phoneAddress]').css('border-bottom','1px solid darkgray');
+    });
+      $('input[name=address1]').click(function(){
+        $('input[name=firstname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=lastname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=cityAddress]').css('border-bottom','1px solid darkgray');
+          $('input[name=phoneAddress]').css('border-bottom','1px solid darkgray');
+    });
+     $('input[name=address2]').click(function(){
+        $('input[name=firstname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=lastname-address]').css('border-bottom','1px solid darkgray');
+        $('input[name=cityAddress]').css('border-bottom','1px solid darkgray');
+          $('input[name=phoneAddress]').css('border-bottom','1px solid darkgray');
+    });
+    //click cancel button form address
+    $('button[name=cancel-form-add-address]').click(function(){
+        $('#form-add-address').hide();
+    });
     
+     $('button[name=cancel-form-edit-address]').click(function(){
+        $('#form-edit-address').hide();
+    });
+    $('#a-addAddress').click(function(){
+        if($('#form-add-address').css('display') == "none"){
+            $('#form-add-address').css('display','block');
+        }
+        else{
+              $('#form-add-address').css('display','none');
+        }
+    });
+     $('#a-editAddress').click(function(){
+        if($('#form-edit-address').css('display') == "none"){
+            $('#form-edit-address').css('display','block');
+        }
+        else{
+              $('#form-edit-address').css('display','none');
+        }
+    });
 });

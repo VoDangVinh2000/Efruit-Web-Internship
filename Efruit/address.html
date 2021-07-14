@@ -38,7 +38,7 @@
                 <div class="container-my-account">
                     <h1>
                         My Account
-                        <span class="addAdress"><a href="#addAdress">Add a New Address</a></span>
+                        <span class="addAdress"><a href="#addAdress" id="a-addAddress">Add a New Address</a></span>
                     </h1>
                     <hr>
                     <div class="row">
@@ -49,57 +49,84 @@
                             </div>
                         </div>
                         <div class="col-sm-8">
-                            <div class="form-add-address">
+                            <div class="form-add-address" id="form-add-address">
                                 <h2>Add a New Address</h2>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="firstName-Address">
-                                            <h4 class="h6" style="font-weight: 600;">First Name</h4>
-                                            <input type="text" autofocus name="firstname-address"
-                                                autocapitalize="words">
+                                <form action="" method="post">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="firstName-Address">
+                                                <h4 class="h6" style="font-weight: 600;">First Name</h4>
+                                                <input type="text" autofocus name="firstname-address"
+                                                    autocapitalize="words">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="lastName-Address">
+                                                <h4 class="h6" style="font-weight: 600;">Last Name</h4>
+                                                <input type="text" autofocus name="lastname-address"
+                                                    autocapitalize="words">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="lastName-Address">
-                                            <h4 class="h6" style="font-weight: 600;">Last Name</h4>
-                                            <input type="text" autofocus name="lastname-address" autocapitalize="words">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="company-address">
+                                                <h4 class="h6" style="font-weight: 600;">Company</h4>
+                                                <input class="form-control" type="text" name="companyAddress"
+                                                    autocapitalize="words">
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <h4 class="h6" style="font-weight: 600;">Company</h4>
-                                        <input type="text" name="companyAddress" autocapitalize="words">
-                                    </div>
 
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <h4 class="h6" style="font-weight: 600;">Address 1</h4>
-                                        <input type="text" name="address1" autocapitalize="words">
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <h4 class="h6" style="font-weight: 600;">Address 2</h4>
-                                        <input type="text" name="address2" autocapitalize="words">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="address1">
+                                                <h4 class="h6" style="font-weight: 600;">Address 1</h4>
+                                                <input class="form-control" type="text" name="address1"
+                                                    autocapitalize="words">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <h4 class="h6" style="font-weight: 600;">City</h4>
-                                        <input type="text" name="cityAddress" autocapitalize="words">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="address2">
+                                                <h4 class="h6" style="font-weight: 600;">Address 2</h4>
+                                                <input class="form-control" type="text" name="address2"
+                                                    autocapitalize="words">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="city-address">
+                                                <h4 class="h6" style="font-weight: 600;">City</h4>
+                                                <input type="text" name="cityAddress" autocapitalize="words">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="phone-address">
+                                                <h4 class="h6" style="font-weight: 600;">Phone</h4>
+                                                <input type="text" name="phoneAddress" autocapitalize="words">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="add-address-submit">
+                                                <input type="submit" value="Add Address" name="submitAddresss">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                                 <div class="row">
-                                    <div class="col">
-                                        <h4 class="h6" style="font-weight: 600;">Country</h4>
-                                        <input type="text" name="countryAddress" autocapitalize="words">
+                                    <div class="col-md">
+                                        <div class="cancel-address">
+                                            <button type="button" name="cancel-form-add-address">Cancel</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <br><br><br><br><br>
-                            <div class="account-details">
+                            <div class="address-details">
                                 <h2 class="mb-4">Your Address</h2>
                                 <!--Show account details-->
                                 <h3 class="h5">Họ tên (Đăng Vĩnh)</h3>
@@ -107,7 +134,88 @@
                                 <p>Address (Bình Mỹ)</p>
                                 <p>City (Hồ Chí Minh)</p>
                                 <p>... Các thông tin address theo thiết kế database</p>
-                                <p><a href="account/address.html">View Address (2)</a></p>
+                                <li>
+                                    <a href="#edit" id="a-editAddress">Edit </a>
+                                    |
+                                    <a href="#delete">Delete</a>
+                                </li>
+                            </div>
+                            <div class="form-edit-address" id="form-edit-address">
+                                <h2 class="mb-4">Edit Address</h2>
+                                <form action="" method="post">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="firstName-Address">
+                                                <h4 class="h6" style="font-weight: 600;">First Name</h4>
+                                                <input type="text" autofocus name="firstname-address"
+                                                    autocapitalize="words">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="lastName-Address">
+                                                <h4 class="h6" style="font-weight: 600;">Last Name</h4>
+                                                <input type="text" autofocus name="lastname-address"
+                                                    autocapitalize="words">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="company-address">
+                                                <h4 class="h6" style="font-weight: 600;">Company</h4>
+                                                <input class="form-control" type="text" name="companyAddress"
+                                                    autocapitalize="words">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="address1">
+                                                <h4 class="h6" style="font-weight: 600;">Address 1</h4>
+                                                <input class="form-control" type="text" name="address1"
+                                                    autocapitalize="words">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="address2">
+                                                <h4 class="h6" style="font-weight: 600;">Address 2</h4>
+                                                <input class="form-control" type="text" name="address2"
+                                                    autocapitalize="words">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="city-address">
+                                                <h4 class="h6" style="font-weight: 600;">City</h4>
+                                                <input type="text" name="cityAddress" autocapitalize="words">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="phone-address">
+                                                <h4 class="h6" style="font-weight: 600;">Phone</h4>
+                                                <input type="text" name="phoneAddress" autocapitalize="words">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="add-address-submit">
+                                                <input type="submit" value="Add Address" name="submitAddresss">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="cancel-address">
+                                            <button type="button" name="cancel-form-edit-address">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -116,5 +224,5 @@
         </div>
     </div>
 </body>
-
+<script src="public/js/jsPageAccount.js"></script>
 </html>

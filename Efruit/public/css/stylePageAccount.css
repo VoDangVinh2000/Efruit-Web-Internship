@@ -42,7 +42,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .bread-section{
     padding: 70px;
-    background: url('../images/page-title-1.jpg') no-repeat scroll center center / cover;
+    /*  background: url('../images/page-title-1.jpg') no-repeat scroll center center / cover;*/
+    background: url('../images/photo-background-v.jpg') no-repeat scroll center / cover;
+    outline: none;
 }
 .container-section{
     display: flex;
@@ -98,13 +100,18 @@ h1,h2,h3,h4,h5,h6{
     border: none;
 }
 .input-submit-account input{
-    border-bottom: none;
+    transition: .5s linear;
+    border: none;
     width: fit-content;
     background: black;
     color: white;
     padding: 10px 15px 10px 15px;
     outline: none;
     box-sizing: border-box;
+}
+.input-submit-account input:hover{
+    background-color: #bdc3c7;
+   
 }
 .end-form-createaccount{
     padding: 0 30px 30px 30px;
@@ -197,6 +204,7 @@ h1,h2,h3,h4,h5,h6{
     border-right: none;
     border-bottom: 1px solid #bdc3c7;
     width: 100%;
+    padding: 5px 0;
 }
 .lastName-Address input{
     border-top: none;
@@ -204,6 +212,95 @@ h1,h2,h3,h4,h5,h6{
     border-right: none;
     border-bottom: 1px solid #bdc3c7;
     width: 100%;
+    padding: 5px 0;
+}
+.city-address input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #bdc3c7;
+    width: 100%;
+    padding: 5px 0;
+}
+.phone-address input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #bdc3c7;
+    width: 100%;
+    padding: 5px 0;
+}
+.add-address-submit{
+    padding: 15px 0 10px 0;
+
+}
+.add-address-submit input:hover{
+    background-color: #ecf0f1;
+    color: black;
+    border-radius: 8px;
+    border-bottom: none;
+}
+.add-address-submit input{
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #bdc3c7;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.cancel-address{
+    width: 100%;
+    border-bottom: 1px solid #bdc3c7;
+    padding: 15px 0 10px 0;
+}
+.cancel-address button{
+    width: fit-content;
+    text-align: left;
+    border: none;
+    background-color: white;
+}
+.cancel-address button:hover{
+    background-color: #ecf0f1;
+    color: black;
+    border-radius: 8px;
+    border-bottom: none;
+}
+.address-details p{
+    font-family: Marcellus,Arial,Helvetica,sans-serif;
+}
+.address-details li a:hover{
+    transition: .2s linear;
+    color: red;
+}
+.address-details li a{
+    text-decoration: none;
+    color:#333333; 
+}
+.address-details li{
+    padding: 3px;
+    list-style: none;
+    display: inline-block;
+}
+.form-add-address{
+    display: none;
+}
+.form-edit-address{
+    display: none;
+}
+/*css contact*/
+.container-contact-us{
+    padding-top: 15px;
+}
+.container-contact-us h1{
+    font-weight: 600;
+}
+.container-contact-us a{
+    text-decoration: none;
+    color: green;
+    cursor: pointer;
+}
+.container-contact-us a:hover{
+    text-decoration: underline;
 }
 /*css reponsive*/
 
