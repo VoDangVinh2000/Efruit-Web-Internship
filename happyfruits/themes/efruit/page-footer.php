@@ -69,7 +69,7 @@ $copy_right_year = $start_year != $current_year ? $start_year . '-' . $current_y
 					<div class="footer--info-link">
 						<div class="footer--info-address">
 							<!-- <i class="fa fa-home"></i> -->
-							<span bind-translate="Cửa hàng">Cửa </span>: <span class="efruit-vi">
+							<span bind-translate="Cửa hàng">Cửa hàng</span>: <span class="efruit-vi">
 								<?= getvalue($main_branch, 'short_address') ?>
 							</span><span class="efruit-en efruitjs"><?= getvalue($main_branch, 'en_address')
 																	?></span>
